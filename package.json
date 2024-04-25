@@ -1,0 +1,42 @@
+{
+  "name": "@sivaganesh/configurations",
+  "version": "1.0.0",
+  "description": "All configurations required for the environment setup for a project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Sivaganesh-Akula/configurations.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript"
+  ],
+  "author": "Siva Ganesh <akulasivaganesh1996@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sivaganesh-Akula/configurations/issues"
+  },
+  "homepage": "https://github.com/Sivaganesh-Akula/configurations#readme",
+  "devDependencies": {
+    "@babel/cli": "7.24.1",
+    "@babel/core": "7.24.4",
+    "@babel/preset-env": "7.24.4",
+    "autoprefixer": "10.4.19",
+    "core-js-pure": "3.37.0",
+    "eslint": "8.57.0",
+    "lint-staged": "15.2.2",
+    "postcss": "^8.4.38",
+    "prettier": "3.2.5",
+    "stylelint": "16.4.0",
+    "typescript": "5.4.5",
+    "webpack": "5.91.0",
+    "webpack-cli": "5.1.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier",
+    "*.{js,jsx, ts, tsx}": "eslint"
+  }
+}
