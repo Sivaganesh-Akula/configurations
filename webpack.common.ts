@@ -7,6 +7,15 @@ const config: Configuration = {
   devtool: false,
   output: {
     path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.ts?$/,
+        use: "ts-loader",
+      },
+    ],
   },
 };
 export default config;
