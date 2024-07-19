@@ -4,7 +4,8 @@
   "description": "All configurations required for the environment setup for a project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.common.ts"
   },
   "repository": {
     "type": "git",

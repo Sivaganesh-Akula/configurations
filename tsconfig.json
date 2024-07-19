@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
-        
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "dist",
     },
     "include": ["**/*"],
     "exclude": []
