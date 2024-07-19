@@ -36,7 +36,7 @@ module.exports = {
       import: "./src/admin.js",
       dependOn: ["dateUtils", "stringUtils"],
       // requires to enable experiments: {outputModule: true}
-      library: { name: "AdminLibrary", type: "amd" },
+      library: { type: "module" },
       // file name given in entry itself instead of giving then in output
       // filename: "adminFileNameInEntry.objectSyntaxDescriptionEntry.js",
     },
