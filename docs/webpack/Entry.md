@@ -1,6 +1,8 @@
-# Single Entry Syntax
+# Entry
 
-## Usage: `entry: string | [string]`
+## Single Entry Syntax
+
+### Usage: `entry: string | [string]`
 
 - ✅ Quickly set up a webpack configuration for an application
 - 🔴 There is not much flexibility in extending or scaling your configuration
@@ -27,9 +29,9 @@
   },
 ```
 
-# Object Syntax
+## Object Syntax
 
-## Usage: entry: `{ <entryChunkName> string | [string] } | {}`
+### Usage: `entry: { <entryChunkName> string | [string] } | {}`
 
 - ✅ The object syntax is more verbose and scalable way of defining entry entries
 
