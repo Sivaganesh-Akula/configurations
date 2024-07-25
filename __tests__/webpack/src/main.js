@@ -1,11 +1,8 @@
 // import { formatDate, calculateTaskProgress, getTaskSummary } from "./dateUtils";
-import {
-  formatDate,
-  calculateTaskProgress,
-  getTaskSummary,
+import { formatDate, calculateTaskProgress, getTaskSummary } from "./dateUtils";
 
-  // will not disable any configured loaders
-} from "babel-loader!../loaders/console-log-inline-loader?module!./dateUtils";
+// will not disable any configured loaders
+// } from "babel-loader!../loaders/console-log-inline-loader?module!./dateUtils";
 
 //disable all configured normal loaders
 // } from "!babel-loader!../loaders/console-log-inline-loader?module!./dateUtils";

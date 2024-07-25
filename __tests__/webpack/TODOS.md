@@ -10,3 +10,7 @@
 
 - async loaders
 - emit additional arbitrary files.
+
+# Plugins
+
+- node api
