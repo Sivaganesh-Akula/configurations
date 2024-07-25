@@ -1,4 +1,20 @@
-import { formatDate, calculateTaskProgress, getTaskSummary } from "./dateUtils";
+// import { formatDate, calculateTaskProgress, getTaskSummary } from "./dateUtils";
+import {
+  formatDate,
+  calculateTaskProgress,
+  getTaskSummary,
+
+  // will not disable any configured loaders
+} from "babel-loader!../loaders/console-log-inline-loader?module!./dateUtils";
+
+//disable all configured normal loaders
+// } from "!babel-loader!../loaders/console-log-inline-loader?module!./dateUtils";
+
+// will disable all configured loaders (preLoaders, loaders, postLoaders)
+// } from "!!babel-loader!../loaders/console-log-inline-loader?module!./dateUtils";
+
+// will disable all configured preLoaders and loaders but not postLoaders
+// } from "-!babel-loader!../loaders/console-log-inline-loader?module!./dateUtils";
 
 function main() {
   console.log("Main module loaded");
