@@ -2,10 +2,10 @@ const path = require("path");
 const LogBuildPlugin = require("./build-log-plugin");
 
 module.exports = {
-  entry: "../../src/main.js",
+  entry: "../../src/javascript/main.js",
 
   // if entry requires typescript file
-  // entry: "../../src/mainTS.ts",
+  // entry: "../../src/typescript/main.ts",
 
   mode: "development",
   devtool: false,

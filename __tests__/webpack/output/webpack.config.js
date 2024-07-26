@@ -5,15 +5,15 @@ module.exports = {
    * Single Entry (Shorthand) Syntax
    */
   // single entry file with string input file
-  // entry: "../../src/basicCalc.js",
+  // entry: "../../src/javascript/basicCalc.js",
 
   /**
    * Object Syntax
    */
   // basic entry without description object
   entry: {
-    basicCalc: "../src/basicCalc.js",
-    trigonometryTable: "../src/trigonometryTable.js",
+    basicCalc: "../src/javascript/basicCalc.js",
+    trigonometryTable: "../src/javascript/trigonometryTable.js",
   },
 
   mode: "development",

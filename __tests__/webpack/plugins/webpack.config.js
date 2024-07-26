@@ -3,7 +3,7 @@ const LogBuildPlugin = require("./build-log-plugin");
 const { ProgressPlugin } = require("webpack");
 
 module.exports = {
-  entry: "../../src/main.js",
+  entry: "../../src/javascript/main.js",
 
   mode: "development",
   devtool: false,

@@ -3,7 +3,7 @@ import {
   calculateTaskProgress,
   getTaskSummary,
   Task,
-} from "./dateUtilsTS.ts";
+} from "./dateUtils";
 
 function main(): void {
   console.log("Main module loaded");
