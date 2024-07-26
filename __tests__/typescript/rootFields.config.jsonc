@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  
+  /**
+  * Accepts file or array(right most priority) of files
+  */
+  "extends":["./base.config.json"],
+
+  /**
+  * Transpiles the files and it's dependencies
+  * Do not accept folders
+  */
+  "files": ["../src/combined/mainCopy.ts"],
+
+  /**
+  * include and exclude support wildcard characters to make glob patterns:
+  * `*`: matches zero or more characters (excluding directory separators)
+  * `?`: matches any one character (excluding directory separators)
+  * `**\/`: matches any directory nested to any level
+  */
+
+  /**
+  * Specifies an array of filenames or patterns to include in the program
+  */
+  "include": ["../src/typescript/**/*.ts"],
+
+  /**
+  * Specifies an array of filenames or patterns that should be skipped when resolving include.
+  */
+  "exclude": ["../src/typescript/excluded", "../src/typescript/exclude.ts"],
+
+  /**
+  * Works only with build (tsc --build)
+  * Referenced projects must have the new composite setting enabled
+  */
+  "references": [
+    {"path": "../src/references"}
+  ]
+}
