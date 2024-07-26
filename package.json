@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "@sivaganesh/configurations",
   "version": "1.0.0",
   "description": "All configurations required for the environment setup for a project",

@@ -5,7 +5,7 @@ module.exports = {
    * Single Entry (Shorthand) Syntax
    */
   // single entry file with string input file
-  // entry: "../src/basicCalc.js",
+  // entry: "../../src/basicCalc.js",
 
   /**
    * Object Syntax
