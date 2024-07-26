@@ -5,35 +5,35 @@ module.exports = {
    * Single Entry (Shorthand) Syntax
    */
   // single entry file with string input file
-  entry: "../../src/javascript/basicCalc.js",
+  entry: "../src/javascript/basicCalc.js",
 
   // multiple entry files with array of input files
-  // entry: ["../../src/javascript/basicCalc.js", "../../src/javascript/trigonometryTable.js"],
+  // entry: ["../src/javascript/basicCalc.js", "../src/javascript/trigonometryTable.js"],
 
   /**
    * Object Syntax
    */
   // basic entry without description object
   // entry: {
-  //   basicCalc: "../../src/javascript/basicCalc.js",
-  //   trigonometryTable: "../../src/javascript/trigonometryTable.js",
+  //   basicCalc: "../src/javascript/basicCalc.js",
+  //   trigonometryTable: "../src/javascript/trigonometryTable.js",
   // },
 
   // object syntax entry with description object
   // entry: {
   //   // If filename key is not available in output then the key given in entry is taken as output file name
   //   // example below utils is the the output filename generated
-  //   dateUtils: "../../src/javascript/dateUtils.js",
-  //   stringUtils: "../../src/javascript/stringUtils.js",
+  //   dateUtils: "../src/javascript/dateUtils.js",
+  //   stringUtils: "../src/javascript/stringUtils.js",
   //   main: {
-  //     import: "../../src/javascript/main.js",
+  //     import: "../src/javascript/main.js",
   //     runtime: "main-runtime",
   //     // dependOn: "dateUtils",
   //     // file name given in entry itself instead of giving then in output
   //     // filename: "mainFileNameInEntry.objectSyntaxDescriptionEntry.js",
   //   },
   //   admin: {
-  //     import: "../../src/javascript/admin.js",
+  //     import: "../src/javascript/admin.js",
   //     dependOn: ["dateUtils", "stringUtils"],
   //     // requires to enable experiments: {outputModule: true}
   //     library: { type: "module" },

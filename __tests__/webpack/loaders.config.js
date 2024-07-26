@@ -2,10 +2,10 @@ const path = require("path");
 const LogBuildPlugin = require("./build-log-plugin");
 
 module.exports = {
-  entry: "../../src/javascript/main.js",
+  entry: "../src/javascript/main.js",
 
   // if entry requires typescript file
-  // entry: "../../src/typescript/main.ts",
+  // entry: "../src/typescript/main.ts",
 
   mode: "development",
   devtool: false,
@@ -53,13 +53,13 @@ module.exports = {
         test: /\.js$/,
         enforce: "pre",
         exclude: /node_modules/,
-        use: path.resolve(__dirname, "file-size-checker.loader.js"),
+        use: path.resolve(__dirname, "./loaders/file-size-checker.loader.js"),
       },
       {
         test: /\.js$/,
         use: [
           {
-            loader: path.resolve(__dirname, "console-log-loader.js"),
+            loader: path.resolve(__dirname, "./loaders/console-log-loader.js"),
           },
           {
             loader: "babel-loader",

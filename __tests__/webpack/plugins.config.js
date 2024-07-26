@@ -1,9 +1,9 @@
 const path = require("path");
-const LogBuildPlugin = require("./build-log-plugin");
+const LogBuildPlugin = require("./plugins/build-log-plugin");
 const { ProgressPlugin } = require("webpack");
 
 module.exports = {
-  entry: "../../src/javascript/main.js",
+  entry: "../src/javascript/main.js",
 
   mode: "development",
   devtool: false,
