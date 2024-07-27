@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends":["./rootFields.config.jsonc"],
+  "compilerOptions": {
+    /**
+    * `undefined or null` (default) provide suggestions as warnings to editors
+    * `true` unreachable code is ignored
+    * `false` raises compiler errors about unreachable code
+    */
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+
+    /**
+    * If Strict all the below properties will be true; false otherwise
+    *
+    * alwaysStrict -> Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file.
+    * strictNullChecks -> Throws on  possibly undefined eg: array find has no guarantee that it will actually return value
+    * strictBindCallApply -> checks functions call, bind, and apply are invoked with correct argument for the underlying function
+    * strictFunctionTypes -> this flag causes functions parameters to be checked more correctly.
+    * strictPropertyInitialization -> will raise an error when a class property was declared but not set in the constructor.
+    * noImplicitAny -> TypeScript will issue an error whenever it would have inferred any
+    * noImplicitThis -> Raise error on ‘this’ expressions with an implied ‘any’ type.
+    * useUnknownInCatchVariables -> Allow changing the type of the variable in a catch clause from any to unknown
+    */
+    "strict": true,
+
+    /**
+    * TypeScript applies stricter rules around how it handles properties on type or interfaces which have a ? prefix
+    * Without this flag enabled, there are three values “dark”, “light” and undefined.
+    */
+    "exactOptionalPropertyTypes": true,
+
+    /**
+    * Ensures that any non-empty case inside a switch statement includes either break, return, or throw.
+    */
+    "noFallthroughCasesInSwitch": true,
+
+    /**
+    * Ensure that the sub-classes never go out of sync, by ensuring that functions which override include the keyword override.
+    */
+    "noImplicitOverride": true,
+
+    /**
+    * Check all code paths in a function to ensure they return a value.
+    */
+    "noImplicitReturns": true,
+
+    /**
+    * Ensures consistency between accessing a field via the “dot” (obj.key) syntax, and “indexed” (obj["key"])
+    */
+    "noPropertyAccessFromIndexSignature": true,
+
+    /**
+    * Option will add undefined to any un-declared field in the type.
+    */
+    "noUncheckedIndexedAccess": true,
+
+    /**
+    * Report errors on unused local variables.
+    */
+    "noUnusedLocals": true,
+
+    /**
+    * Report errors on unused parameters in functions.
+    */
+    "noUnusedParameters": true,
+  }
+}
