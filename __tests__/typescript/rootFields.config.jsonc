@@ -4,7 +4,7 @@
   /**
   * Accepts file or array(right most priority) of files
   */
-  "extends":["./base.config.json"],
+  "extends":["./base.config.jsonc"],
 
   /**
   * Transpiles the files and it's dependencies
@@ -32,8 +32,9 @@
   /**
   * Works only with build (tsc --build)
   * Referenced projects must have the new composite setting enabled
+  * Refer references.config.json for working model as tsc --build not supporting jsonc files
   */
-  "references": [
+  /* "references": [
     {"path": "../src/references"}
-  ]
+  ] */
 }

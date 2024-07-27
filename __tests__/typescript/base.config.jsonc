@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /**
+    * specifies the ECMAScript target version for the output JavaScript.
+    * Value ES3, ES5, ES6 or ES2015, ... ,ES2023 etc..,
+    * ESNext -> The special value refers to the highest version your version of TypeScript supports.
+    */
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "./dist"
+  },
+}
