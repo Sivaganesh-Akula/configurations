@@ -1,13 +1,27 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "declaration": true,
-        // "emitDeclarationOnly": true,
-        "outDir": "dist",
-        "noEmit": false,
-        "noEmitOnError": true
-    },
-    "include": ["./src/**/*.ts"],
-    "exclude": []
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Type checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strict": true,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    // "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "noEmit": false,
+    "noEmitOnError": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": []
 }
